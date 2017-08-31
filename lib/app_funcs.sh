@@ -66,8 +66,6 @@ function compile_app() {
 
   cd $build_path
   output_section "Compiling!!!"
-  export CHEESE=`ls ${platform_tools_path}`
-  output_section $CHEESE
   export APPD_NATIVE_SDK_HOME=$(platform_tools_path)/appd_agent
   APPD_NATIVE_SDK_HOME=$(platform_tools_path)/appd_agent mix compile --force || exit 1
 
